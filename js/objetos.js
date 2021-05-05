@@ -1,12 +1,12 @@
 //CREO OBJETOS
-const auto1 = new Vehiculos("Ka", "Ford", "2013", "85000", "620000")
-const auto2 = new Vehiculos("gol", "trend", "2016", "35000", "950000")
-const auto3 = new Vehiculos("etios", "toyota", "2015", "46000", "1200000")
-const auto4 = new Vehiculos("up", "volkswagen", "2020", "15000", "1350000")
-const auto5 = new Vehiculos("toro", "fiat", "2017", "150000", "1800000")
-const auto6 = new Vehiculos("saveiro", "volkswagen", "2010", "189000", "750000")
-const auto7 = new Vehiculos("kics", "nissan", "2021", "5000", "2100000")
-const auto8 = new Vehiculos("ranger", "ford", "2012", "250000", "2200000")
+const auto1 = new Vehiculos("Ka", "Ford", "2013", "85000", "620000", "clientes@cotizadorweb.com.ar")
+const auto2 = new Vehiculos("gol", "trend", "2016", "35000", "950000", "clientes@cotizadorweb.com.ar")
+const auto3 = new Vehiculos("etios", "toyota", "2015", "46000", "1200000", "clientes@cotizadorweb.com.ar")
+const auto4 = new Vehiculos("up", "volkswagen", "2020", "15000", "1350000","clientes@cotizadorweb.com.ar")
+const auto5 = new Vehiculos("toro", "fiat", "2017", "150000", "1800000", "clientes@cotizadorweb.com.ar")
+const auto6 = new Vehiculos("saveiro", "volkswagen", "2010", "189000", "750000","clientes@cotizadorweb.com.ar")
+const auto7 = new Vehiculos("kics", "nissan", "2021", "5000", "2100000","clientes@cotizadorweb.com.ar")
+const auto8 = new Vehiculos("ranger", "ford", "2012", "250000", "2200000","clientes@cotizadorweb.com.ar")
 
 //sumo gastos al precio
 auto1.sumarGastos()
@@ -22,7 +22,7 @@ auto8.sumarGastos()
 let autos = [auto1, auto2, auto3, auto4]
 let pickups = [auto5, auto6, auto7, auto8]
 const automotores = autos.concat(pickups)
-
+console.log(autos)
 //Almaceno ARRAY de objetos
 const GuardarAutos = (clave, valor) => {localStorage.setItem(clave, valor)};
 GuardarAutos("listaAutos", JSON.stringify(autos));
